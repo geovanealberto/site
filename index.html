@@ -130,32 +130,16 @@
 </div>
 
 <!-- Google Map -->
-<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
-
+<div >
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3706.3531917923156!2d-43.343025685868454!3d-21.727829002324757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989cd870ee0947%3A0x55975b122c43b333!2sR.+Silvestre+de+Ara%C3%BAjo+P%C3%B4rto%2C+320+-+Marumbi%2C+Juiz+de+Fora+-+MG%2C+36050-580!5e0!3m2!1spt-BR!2sbr!4v1537230128667" width="700" height="500" frameborder="0" style="border:0; width:100%; "  allowfullscreen></iframe>
+</div>
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-16">
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
 
 <!-- Add Google Maps -->
-<script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
